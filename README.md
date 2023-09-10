@@ -30,7 +30,7 @@ The Movie Enthusiast Website aims to provide users with a seamless experience fo
 - Database (e.g., PostgreSQL)
 
 ### Installation
-1. Clone this repository: `git clone https://github.com/your-username/movie-enthusiast.git`
+1. Clone this repository: ``
 2. Navigate to the project directory: `cd movie-enthusiast`
 3. Install dependencies: `npm install`
 4. Configure environment variables: Create a `.env` file based on `.env.example` and add your configuration.
