@@ -36,28 +36,52 @@ nav {
     width: 80%;
     height: 60%;
 }
-.search {
-    width: 600px;
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+form {
     color: #fff;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    background-color: transparent;
-    margin-top: 1rem;
+    display: flex;
+    padding: 2px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 15px;
+    width: 500px;
 }
-.search:focus {
+form:hover {
+    border: 1px solid #e3ab67;
+}
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    width: 100%;
+    font-size: 14px;
+    color: inherit;
+    border: 0px;
+    border-radius: inherit;
+}
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23fff' d='M23.707 22.293l-6.271-6.271A9.95 9.95 0 0 0 19 10c0-5.523-4.477-10-10-10S-1 4.477-1 10s4.477 10 10 10a9.95 9.95 0 0 0 6.022-2.004l6.271 6.271a1 1 0 0 0 1.414-1.414zM3 10a7 7 0 1 1 14 0 7 7 0 0 1-14 0z'/%3E%3C/svg%3E") no-repeat center center;
+    background-size: 18px 18px ;
+    cursor: pointer;
+    opacity: 0.6;
+}
+button[type="submit"]:hover {
+    opacity: 1;
+}
+button[type="submit"]:focus, input[type="search"]:focus {
     outline: none;
-    background-color: #bf7e2f;
-}
-.search::placeholder {
-    color: #fff;
-    opacity: 0.7;
-    font-weight: 500;
-}
-.search:hover {
-    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 3px 0 #e3ab67;  
 }
 nav {
     position: absolute;
@@ -159,7 +183,7 @@ nav .fa {
 }
 
 /*-----Responsiveness-----*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1040px) {
     .logo {
         width: 100px;
     }
@@ -167,8 +191,8 @@ nav .fa {
         width: 80%;
         height: 60%;
     }
-    .search {
-        width: 320px;
+    form {
+        width: 300px;
     }
     nav {
         padding: 0.5rem;
