@@ -1,10 +1,10 @@
 // Using the TMDB API to get the movie data
 
-const API_KEY = '2a484bae29615b049d11c8864b9d76ea';
+const API_KEY = 'dabf900e002935c314f7fa12ce21eb3b';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&api_key=' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
-const searchURL = BASE_URL + '/search/movie?' + API_KEY;
+const searchURL = BASE_URL + '/search/movie?';
 
 const main = document.getElementById('main');
 const form = document.getElementById('form');
@@ -62,7 +62,7 @@ form.addEventListener('submit', (e) => {
     console.log(searchTerm);
 
     if(searchTerm) {
-        getMovies(searchURL + '&query=' + searchTerm);
+        getMovies(searchURL + '&query=' + searchTerm + '&api_key=' + API_KEY);
     } else {
         getMovies(API_URL);
     }

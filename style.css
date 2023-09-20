@@ -131,10 +131,10 @@ main {
     font-weight: 600;
 }
 .movie-info span.green {
-    color: green;
+    color: #04c304;
 }
 .movie-info span.yellow {
-    color: yellow;
+    color: #ffd900;
 }
 .movie-info span.red {
     color: red;
@@ -157,10 +157,21 @@ main {
 nav .fa {
     display: none;
 }
+
 /*-----Responsiveness-----*/
 @media screen and (max-width: 1024px) {
+    .logo {
+        width: 100px;
+    }
+    .logo img {
+        width: 80%;
+        height: 60%;
+    }
     .search {
-        width: 360px;
+        width: 320px;
+    }
+    nav {
+        padding: 0.5rem;
     }
     .hero-text h1 {
         font-size: 2.5rem;
