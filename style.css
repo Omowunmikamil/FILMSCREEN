@@ -131,13 +131,13 @@ main {
     font-weight: 600;
 }
 .movie-info span.green {
-    color: rgb(3, 179, 3);
+    color: green;
 }
 .movie-info span.yellow {
-    color: rgb(255, 217, 0);
+    color: yellow;
 }
 .movie-info span.red {
-    color: rgb(201, 4, 4);
+    color: red;
 }
 .overview {
     padding: 1rem;

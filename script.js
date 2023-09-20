@@ -46,11 +46,11 @@ function showMovies(data) {
 
 function getcolor(vote) {
     if(vote >= 8) {
-        return 'rgb(3, 179, 3)';
-    } else if(vote >= 5) {
-        return 'rgb(255, 217, 0)';
+        return 'green';
+    } else if(vote >= 6) {
+        return 'yellow';
     } else {
-        return 'rgb(201, 4, 4)';
+        return 'red';
     }
 }
 
