@@ -130,14 +130,14 @@ main {
     border-radius: 3px;
     font-weight: 600;
 }
-.movie-info span .green {
-    color: lightgreen;
+.movie-info span.green {
+    color: rgb(3, 179, 3);
 }
-.movie-info span .yellow {
-    color: yellow;
+.movie-info span.yellow {
+    color: rgb(255, 217, 0);
 }
-.movie-info span .red {
-    color: red;
+.movie-info span.red {
+    color: rgb(201, 4, 4);
 }
 .overview {
     padding: 1rem;
